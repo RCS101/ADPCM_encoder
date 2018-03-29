@@ -2,29 +2,29 @@
 #include <stdlib.h>
 #include "main.h"
 #include <unistd.h>
+#include "wav.h"
 
-int main(int argc, char *argv[])
+int main()
 {
 	FILE *fin, *fout;
-	char ch[64];
+	char ch_buffer[64], ch;
 	int num;
 	int8_t i;
-	fin = fopen("SlitWristTheory.wav", "rb");
+	fin = fopen("tst.txt", "rb");
     fout = fopen("onlyADPCM.bin", "wb");
-
-    fread(ch, sizeof(ch), 1,fin);
-
+    if(fin==NULL)
+    {
+        printf("Error");
+        exit(1);
+    }
+    fread(ch_buffer, sizeof(ch), 1,fin);
+/*
     for(i=0;i<64;i++)
     {
         printf("%x ", ch[i]);
     }
 
-/*
-	if(fin==NULL)
-    {
-        printf("Error");
-        exit(1);
-    }
+
     for(i=0;i<100;i++)
     {
         ch = fgetc(fin);
@@ -32,8 +32,9 @@ int main(int argc, char *argv[])
         printf("%c, %u\n", ch, num);
         fprintf(fout,"%u", num);
     }
-    */
-}
 
+*/
+    return 1;
+}
 
 
