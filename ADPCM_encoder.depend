@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1522343700 source:c:\users\robin\desktop\c projects\adpcm_encoder\main.c
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+	<unistd.h>
+
+1522337257 c:\users\robin\desktop\c projects\adpcm_encoder\main.h
+
+1522343290 source:c:\users\robin\desktop\c projects\adpcm_encoder\adpcm.c
+	"ADPCM.h"
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+	<unistd.h>
+
+1522343228 c:\users\robin\desktop\c projects\adpcm_encoder\adpcm.h
+

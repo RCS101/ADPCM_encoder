@@ -1,0 +1,6 @@
+#ifndef ADPCM_H_INCLUDED
+#define ADPCM_H_INCLUDED
+
+
+
+#endif // ADPCM_H_INCLUDED
